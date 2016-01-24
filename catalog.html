@@ -30,18 +30,164 @@
   				<p>8 812 450 25 25</p>
   			</div>
   		</header>
-  		<nav class="breadcrumbs">
-  			<a href="#">Главная</a>
-  			<a href="#">Каталог</a>
-  			<a href="#">Сливочное</a>
-  		</nav>
-  		<h1>Сливочное мороженое</h1>
-  		<section class="filters">
-  			<select name="sorting">
-  				<option value="sorting-popular">По популярности</option>
-  			</select>
-  			
-  			
-  		</section>
-
+  		<main>
+  			<nav class="breadcrumbs">
+  				<a href="#">Главная</a>
+  				<a href="#">Каталог</a>
+  				<a href="#">Сливочное</a>
+  			</nav>
+  			<h1>Сливочное мороженое</h1>
+  			<!-- Подумать над названиями всех элементов -->
+  			<section class="filters">
+  				<div class="filters-sorting">
+  					<p>Сортировка:</p>
+  					<select name="sorting">
+  						<option value="sorting-popular">По популярности</option>
+  					</select>
+  				</div>
+  				<div class="filters-price">
+  					<p>Цена: 100 руб. - 500 руб.</p>
+  					<div class="filters-scale">
+  						<div class="bar"></div>
+  					</div>
+           	     <div class="toggle min-toggle"></div>
+           	     <div class="toggle max-toggle"></div>
+  				</div>
+  				<div class="filters-fat">
+  					<p>Жирность</p>
+  					<div class="filters-radio">
+  						<input type="radio" name="fat" value="0%">
+  						<input type="radio" name="fat" value="до 10%" checked>
+  						<input type="radio" name="fat" value="до 30%">
+  						<input type="radio" name="fat" value="выше 30%">
+  					</div>
+  				</div>
+  				<div class="filters-filling">
+  					<p>Наполнители:</p>
+  					<div class="filters-checkbox">
+  						<label>
+  							<input type="checkbox" name="chockolate" checked>
+  							шоколадные
+  						</label>
+  						<label>
+  							<input type="checkbox" name="sugar" checked>
+  							сахарные присыпки
+  						</label>
+  						<label>
+  							<input type="checkbox" name="fruits">
+  							фрукты
+  						</label>
+  						<label>
+  							<input type="checkbox" name="syrop">
+  							сиропы
+  						</label>
+  						<label>
+  							<input type="checkbox" name="jam">
+  							джемы
+  						</label>
+  					</div>
+  					<a href="#">Применить</a>
+  				</div>
+  			</section>
+  			<section class="products">
+  				<div class="products-row">
+  				<!-- первый ряд, второе и третье перепутаны -->
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>310 P/кг</p>
+  							<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>380 P/кг</p>
+  							<a href="#">ливочно-клубничное с посыпкой из белого шоколада</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>355 P/кг</p>
+  							<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>415 P/кг</p>
+  							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+  					</article>
+  				</div>
+  				<div class="products-row">
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>325 P/кг</p>
+  							<a href="#">Сливочное с брусничным джемом</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>410 P/кг</p>
+  							<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>375 P/кг</p>
+  							<a href="#">Сливочно-лимонное с карамельной посыпкой</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>320 P/кг</p>
+  							<a href="#">Сливочное с шоколадной стружкой</a>
+  					</article>
+  				</div>
+  				<div class="products-row">
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>440 P/кг</p>
+  							<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>435 P/кг</p>
+  							<a href="#">Сливочное с ментоловым сиропом</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>355 P/кг</p>
+  							<a href="#">ливчное с кусочками сливочного шоколада</a>
+  					</article>
+  					<article>
+  							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
+  							<p>420 P/кг</p>
+  							<a href="#">Слиочное с мятным сиропом</a>
+  					</article>
+  				</div>
+  			</section>
+  			<section class="paginator">
+  				<a class="prev" href="#"></a>
+            	<a href="#" class="current">1</a>
+            	<a href="#">2</a>
+            	<a href="#">3</a>
+            	<a href="#">4</a>
+            	<a href="#">5</a>
+            	<a class="next" href="#"></a>
+  			</section>
+  		</main>
+  		<footer>
+  			<section class="footer-social">
+  				<a class="social-btn social-btn-tw" href="#"></a>
+  				<a class="social-btn social-btn-in" href="#"></a>
+  				<a class="social-btn social-btn-fb" href="#"></a>
+  				<a class="social-btn social-btn-vk" href="#"></a>
+  			</section>
+  			<section class="footer-ref">
+  				<div class="footer-column-1">
+  					<a href="#">Для поставщиков</a>
+  					<a href="#">О производстве</a>
+  				</div>
+  				<div class="footer-column-2">
+  					<a href="#">Наши документы</a>
+  					<a href="#">Экологические стандарты</a>
+  				</div>
+  			</section>
+  			<section class="footer-copyright">
+  				<img width="50" height="25" src="http://placehold.it/50x25" alt="HTML Academy">
+  				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
+  			</section>
+  		</footer>
   	</body>
