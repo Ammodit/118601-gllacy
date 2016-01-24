@@ -11,19 +11,67 @@
   			</div>
   			<nav class="main-menu">
   				<ul>
-  					<li>Каталог</li>
+  					<li>Каталог
+  						<ul>
+  							<li>Новинки</li>
+  							<li>Сливочное</li>
+  							<li>Щербеты</li>
+  							<li>Фруктовый лед</li>
+  							<li>Мелорин</li>
+  						</ul>
+  					</li>
   					<li>Доставка и оплата</li>
   					<li>О Компании</li>
   				</ul>
   			</nav>
   			<div class="search">
   				<a href="#"></a>
+  				<form action="#" method="get">
+  					<input type="search" placeholder="Что ищем?">
+  				</form>
   			</div>
   			<div class="user-block">
   				<a href="#">Вход</a>
+  				<div class="login">
+  					<form action="#" method="post">
+  						<input name="login" placeholder="Электронная почта">
+  						<input type="password" placeholder="Пароль">
+  					</form>
+  					<button type="submit">Войти</button>
+  					<a href="#">Забыли пароль?</a>
+  					<a href="#">Новая регистрация</a>
+  				</div>
   			</div>
-  			<div class="cart">
+  			<div class="cart cart-empty">
   				<a href="#">Пусто</a>
+  			</div>
+  			<div class="cart cart-full">
+  				<a href="#">2 товара</a>
+  				<div class="cart-full-popup">
+  					<table>
+  						<tr>
+  							<td><a href="#"></a></td>
+  							<td><img width="15" height="15" src="http://placehold.it/15x15" alt=""></td>
+  							<td>Пломбир с апельсиновым джемом</td>
+  							<td><b>1,5кг</b>х 200руб.</td>
+  							<td>300руб.</td>
+  						</tr>
+  						<tr>
+  							<td><a href="#"></a></td>
+  							<td><img width="15" height="15" src="http://placehold.it/15x15" alt=""></td>
+  							<td>Клубничный пломбир с посыпкой из белого шоколада</td>
+  							<td><b>1,5кг</b>х 300руб.</td>
+  							<td>450руб.</td>
+  						</tr>
+  						<tr>
+  						<!-- Объединение ячеек через colspan -->
+  							<td></td>
+  							<td>Итого:</td>
+  							<td>750 руб.</td>
+  						</tr>
+  					</table>
+  					<a href="#">Оформить заказ</a>
+  				</div>
   			</div>
   			<div class="tel">
   				<p>С 10 до 20, ежедневно</p>
@@ -100,7 +148,7 @@
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>380 P/кг</p>
-  							<a href="#">ливочно-клубничное с посыпкой из белого шоколада</a>
+  							<a href="#">Cливочно-клубничное с посыпкой из белого шоколада</a>
   					</article>
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
@@ -118,21 +166,25 @@
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>325 P/кг</p>
   							<a href="#">Сливочное с брусничным джемом</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>410 P/кг</p>
   							<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>375 P/кг</p>
   							<a href="#">Сливочно-лимонное с карамельной посыпкой</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>320 P/кг</p>
   							<a href="#">Сливочное с шоколадной стружкой</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   				</div>
   				<div class="products-row">
@@ -140,21 +192,25 @@
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>440 P/кг</p>
   							<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>435 P/кг</p>
   							<a href="#">Сливочное с ментоловым сиропом</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>355 P/кг</p>
-  							<a href="#">ливчное с кусочками сливочного шоколада</a>
+  							<a href="#">Cливчное с кусочками сливочного шоколада</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   					<article>
   							<img width="150" height="150" src="http://placehold.it/150x150" alt="">
   							<p>420 P/кг</p>
-  							<a href="#">Слиочное с мятным сиропом</a>
+  							<a href="#">Слиdочное с мятным сиропом</a>
+  							<a href="#">Быстрый просмотр</a>
   					</article>
   				</div>
   			</section>
@@ -172,7 +228,7 @@
   			<section class="footer-social">
   				<a class="social-btn social-btn-tw" href="#"></a>
   				<a class="social-btn social-btn-in" href="#"></a>
-  				<a class="social-btn social-btn-fb" href="#"></a>
+  				<a class="social-btn sociCCal-btn-fb" href="#"></a>
   				<a class="social-btn social-btn-vk" href="#"></a>
   			</section>
   			<section class="footer-ref">

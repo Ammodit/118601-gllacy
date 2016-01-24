@@ -11,19 +11,67 @@
   			</div>
   			<nav class="main-menu">
   				<ul>
-  					<li>Каталог</li>
+  					<li>Каталог
+  						<ul>
+  							<li>Новинки</li>
+  							<li>Сливочное</li>
+  							<li>Щербеты</li>
+  							<li>Фруктовый лед</li>
+  							<li>Мелорин</li>
+  						</ul>
+  					</li>
   					<li>Доставка и оплата</li>
   					<li>О Компании</li>
   				</ul>
   			</nav>
   			<div class="search">
   				<a href="#"></a>
+  				<form action="#" method="get">
+  					<input type="search" placeholder="Что ищем?">
+  				</form>
   			</div>
   			<div class="user-block">
   				<a href="#">Вход</a>
+  				<div class="login">
+  					<form action="#" method="post">
+  						<input name="login" placeholder="Электронная почта">
+  						<input type="password" placeholder="Пароль">
+  					</form>
+  					<button type="submit">Войти</button>
+  					<a href="#">Забыли пароль?</a>
+  					<a href="#">Новая регистрация</a>
+  				</div>
   			</div>
-  			<div class="cart">
+  			<div class="cart cart-empty">
   				<a href="#">Пусто</a>
+  			</div>
+  			<div class="cart cart-full">
+  				<a href="#">2 товара</a>
+  				<div class="cart-full-popup">
+  					<table>
+  						<tr>
+  							<td><a href="#"></a></td>
+  							<td><img width="15" height="15" src="http://placehold.it/15x15" alt=""></td>
+  							<td>Пломбир с апельсиновым джемом</td>
+  							<td><b>1,5кг</b>х 200руб.</td>
+  							<td>300руб.</td>
+  						</tr>
+  						<tr>
+  							<td><a href="#"></a></td>
+  							<td><img width="15" height="15" src="http://placehold.it/15x15" alt=""></td>
+  							<td>Клубничный пломбир с посыпкой из белого шоколада</td>
+  							<td><b>1,5кг</b>х 300руб.</td>
+  							<td>450руб.</td>
+  						</tr>
+  						<tr>
+  						<!-- Объединение ячеек через colspan -->
+  							<td></td>
+  							<td>Итого:</td>
+  							<td>750 руб.</td>
+  						</tr>
+  					</table>
+  					<a href="#">Оформить заказ</a>
+  				</div>
   			</div>
   			<div class="tel">
   				<p>С 10 до 20, ежедневно</p>
