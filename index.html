@@ -4,13 +4,14 @@
 	<head>
     	<meta charset="utf-8">
    		<title>HTML Academy: Глейси</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
   	</head>
   	<body>
 
     <div class="container"
   		<header class="main-header">
         <a class="logo" href="index.html">
-          <img width="50" height="25" src="http://placehold.it/50x25" alt="Glacy shop">
+          <img width="153" height="63" src="img/Header/logo_glacy.svg" alt="Glacy shop">
         </a>
 
         <nav class="main-menu">
@@ -33,22 +34,26 @@
         <div class="user-block">
           <div class="search">
             <a class="search-trigger" href="#"></a>
-            <form id="search" class="search-form" action="#" method="get">
-              <input type="search" placeholder="Что ищем?">
-            </form>
+              <div class="search-form">
+                <form id="search" action="#" method="get">
+                  <input type="search" placeholder="Что ищем?">
+                </form>
+              </div>
           </div>
 
           <div class="login">
             <a class="login-trigger" href="#">Вход</a>
-            <form id="login" class="login-form" action="#" method="post">
-              <input name="login" placeholder="Электронная почта">
-              <input type="password" placeholder="Пароль">
-              <button id="login-submit" class="button" type="submit">Войти</button>
-              <div class="login-links">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+              <div class="login-form">
+                <form id="login" action="#" method="post">
+                  <input name="login" placeholder="Электронная почта">
+                  <input type="password" placeholder="Пароль">
+                  <button id="login-submit" class="button" type="submit">Войти</button>
+                  <div class="login-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </form>
               </div>
-            </form>
           </div>
 
           <div class="cart">
@@ -57,14 +62,14 @@
               <table>
                 <tr>
                   <td><a href="#"></a></td>
-                  <td><img width="15" height="15" src="http://placehold.it/15x15" alt=""></td>
+                  <td><img width="33" height="33" src="img/Header/cart_icecream_1.png" alt=""></td>
                   <td>Пломбир с апельсиновым джемом</td>
                   <td>1,5кг<span>х 200руб.</span></td>
                   <td>300руб.</td>
                 </tr>
                 <tr>
                   <td><a href="#"></a></td>
-                  <td><img width="15" height="15" src="http://placehold.it/15x15" alt=""></td>
+                  <td><img width="33" height="33" src="img/Header/cart_icecream_2.png" alt=""></td>
                   <td>Клубничный пломбир с посыпкой из белого шоколада</td>
                   <td>1,5кг<span>х 300руб.</span></td>
                   <td>450руб.</td>
@@ -99,26 +104,30 @@
         </section>
 
         <section class="catalog">
-          <div class="catalog-item stiker">
-            <img width="150" height="150" src="http://placehold.it/150x150" alt="">
+          <div class="catalog-item">
+            <img class="sticker" width="61" height="61" src="img/Catalog/catalog_sticker.png" alt="Хит">
+            <img width="267" height="267" src="img/Catalog/catalog_item_1" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <span class="price">310<strong>/кг</strong></span>
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </div>
 
           <div class="catalog-item stiker">
-            <img width="150" height="150" src="http://placehold.it/150x150" alt="">
+            <img class="sticker" width="61" height="61" src="img/Catalog/catalog_sticker.png" alt="Хит">
+            <img width="267" height="267" src="img/Catalog/catalog_item_2" alt="Сливочно-кофейное с кусочками шоколада">
             <span class="price">380<strong>/кг</strong></span>
             <p>Сливочно-кофейное с кусочками шоколада</p>
           </div>
 
           <div class="catalog-item stiker">
-            <img width="150" height="150" src="http://placehold.it/150x150" alt="">
+            <img class="sticker" width="61" height="61" src="img/Catalog/catalog_sticker.png" alt="Хит">
+            <img width="267" height="267" src="img/Catalog/catalog_item_3" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <span class="price">355<strong>/кг</strong></span>
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           </div>
 
           <div class="catalog-item stiker">
-            <img width="150" height="150" src="http://placehold.it/150x150" alt="">
+            <img class="sticker" width="61" height="61" src="img/Catalog/catalog_sticker.png" alt="Хит">
+            <img width="267" height="267" src="img/Catalog/catalog_item_4" alt="Сливочное крем-брюле с карамельной подливкойs">
             <span class="price">415<strong>/кг</strong></span>
             <p>Сливочное крем-брюле с карамельной подливкой</p>
           </div>
@@ -192,7 +201,7 @@
         </section>
         
         <section class="footer-copyright">
-          <img width="50" height="25" src="http://placehold.it/50x25" alt="HTML Academy">
+          <img width="108" height="37" src="img/Footer/logo_htmlacademy.svg" alt="HTML Academy">
           <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
         </section>
       </footer>
@@ -220,7 +229,7 @@
           <div class="container">
             <div class="slider-cont">
               <div class="slider-text">
-                Крем-брюле и пломбир<br> с малиновым джемом
+                Шоколадный пломбир<br> и лимонный сорбет
               </div>
               <a href="#" class="button option">Давайте оба!</a>
             </div>
@@ -231,7 +240,7 @@
           <div class="container">
             <div class="slider-cont">
               <div class="slider-text">
-                Крем-брюле и пломбир<br> с малиновым джемом
+                Пломбир с помадкой<br> и клубничный щербет
               </div>
               <a href="#" class="button option">Давайте оба!</a>
             </div>
