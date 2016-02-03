@@ -21,3 +21,17 @@ h2 {
   font-weight: bold;
   font-family: "Roboto";
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: block;
+  box-sizing: borer-box;
+  width: 153px;
+  min-height: 63px;
+  float: left;
+  margin-right: 30px;
+}
