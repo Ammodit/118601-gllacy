@@ -4,6 +4,7 @@ body {
   color: #ffffff;
   font-weight: normal;
   font-family: "Roboto";
+  background: #a8a8aa;
 }
 
 h1 {
@@ -22,9 +23,18 @@ h2 {
   font-family: "Roboto";
 }
 
+
 .container {
   margin-left: auto;
   margin-right: auto;
+  background: #dad9d7;
+  min-width: 900px;
+  max-width: 1200px;
+}
+
+.main-header {
+  outline: 5px solid black;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -35,3 +45,204 @@ h2 {
   float: left;
   margin-right: 30px;
 }
+
+.main-menu>ul,
+.submenu{
+  list-style: none;
+  padding: 0px;
+   margin: 0px;
+}
+
+.main-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-menu {
+  position: relative;
+  float: left;
+  background: yellow;
+  height: 32px;
+  width: ;
+}
+
+.main-menu-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.main-menu-item:last-child {
+  margin-right: 0px;
+}
+
+.submenu {
+  display: none;
+}
+/*Отрегулировать положение выпадающего меню по горизонтали*/
+a[href*="catalog"]:hover+.submenu {
+  display: block;
+  position: absolute;
+  background: orange;
+  left: 5px;
+  top: 37px;
+  width: 143px;
+  height: 171px;
+}
+
+.user-block {
+    box-sizing: border-box;
+    float: right;
+}
+
+.user-block>div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.search {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: green;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.search-trigger {
+    display: block;
+    background: yellow;
+     width: 32px;
+     height: 32px;
+    border-radius: 50%;
+    box-sizing: inherit;
+}
+
+.search-form {
+    display: none;
+}
+
+.search-trigger:hover+.search-form {
+    display: block;
+    box-sizing: inherit;
+    background: orange;
+    position: absolute;
+    width: 342px;
+    height: 69px;
+    padding: 15px;
+    left: -310px;
+    top: 35px;
+}
+
+/*Выяснить куда съехал контейнер*/
+.login: {
+    box-sizing: border-box;
+    position: relative;
+    width: 92px;
+    height: 32px;
+    background: green;
+    margin-right: 10px;
+}
+
+.login-trigger {
+    display: block;
+    width: 92px;
+    height: 32px;
+    background: yellow;
+    box-sizing: inherit;
+    margin-right: 10px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.login-form {
+  display: none;
+}
+
+.login-trigger:hover+.login-form {
+    display: block;
+    box-sizing: inherit;
+    position: absolute;
+    width: 272px;
+    height: 175px;
+    background: orange;
+    left: -10px;
+    top: 43px;
+}
+
+.cart {
+    box-sizing: border-box;
+    position: relative;
+    width: 117px;
+    height: 32px;
+    background: green;
+}
+
+.cart-trigger {
+    display: block;
+    box-sizing: inherit;
+    width: 117px;
+    height: 32px;
+    background: yellow;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.cart-full {
+  display: none;
+}
+
+.cart-trigger:hover+.cart-full {
+    display: block;
+    position: absolute;
+    width: 540px;
+    height: 239px;
+    background: orange;
+}
+
+.content {
+  outline: 5px solid pink;
+  box-sizing: border-box;
+}
+
+.header-phone {
+  outline: 5px solid green;
+  box-sizing: border-box;
+  width: auto;
+  text-align: right;
+}
+
+.promo {
+  outline: 1px solid red;
+  margin-top: 572px;
+}
+
+.promo-item {
+  width: 46.6%;
+  height: 230px;
+  text-align:left;
+  background: yellow;
+}
+
+.promo-item:first-child {
+  float: left;
+}
+
+.promo-item:last-child {
+  float: right;
+}
+
+.catalog:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
