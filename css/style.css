@@ -50,7 +50,7 @@ h2 {
 .submenu{
   list-style: none;
   padding: 0px;
-   margin: 0px;
+  margin: 0px;
 }
 
 .main-menu:after {
@@ -65,6 +65,7 @@ h2 {
   background: yellow;
   height: 32px;
   width: ;
+  margin-top: 22px;
 }
 
 .main-menu-item {
@@ -93,6 +94,7 @@ a[href*="catalog"]:hover+.submenu {
 .user-block {
     box-sizing: border-box;
     float: right;
+    margin-top: 22px;
 }
 
 .user-block>div {
@@ -201,6 +203,8 @@ a[href*="catalog"]:hover+.submenu {
 .content {
   outline: 5px solid pink;
   box-sizing: border-box;
+  margin-right: 2.25%;
+  margin-left: 2.25%;
 }
 
 .header-phone {
@@ -213,10 +217,11 @@ a[href*="catalog"]:hover+.submenu {
 .promo {
   outline: 1px solid red;
   margin-top: 572px;
+  margin-bottom: 40px;
 }
 
 .promo-item {
-  width: 46.6%;
+  width: 48.3%;
   height: 230px;
   text-align:left;
   background: yellow;
@@ -224,17 +229,42 @@ a[href*="catalog"]:hover+.submenu {
 
 .promo-item:first-child {
   float: left;
+  margin-right: 2.25%
 }
 
 .promo-item:last-child {
   float: right;
 }
 
-.catalog:after {
-  content: "";
-  display: table;
-  clear: both;
+.catalog {
+  outline: 1px solid red;
+  margin-bottom: 35px;
 }
+/*остается справа зазор*/
+.catalog-item {
+  float: left;
+  width: 23.5%;
+  margin-right: 2%;
+  text-align: center;
+  background: yellow;
+}
+
+.catalog-item:last-child {
+  margin-right: 0%
+}
+
+.about {
+  outline: 1px solid red;
+  height: 306px;
+  width: 100%;
+  margin-bottom: 40;
+}
+
+.about-item {
+  display: inline-block;
+}
+
+
 
 
 
