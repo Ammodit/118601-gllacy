@@ -8,7 +8,7 @@
   <body>
 
     <div class="container">
-  		<header class="main-header">
+  		<header class="main-header clearfix">
         <a class="logo" href="index.html">
           <img width="153" height="63" src="img/Header/logo_glacy.svg" alt="Glacy shop">
         </a>
@@ -85,7 +85,7 @@
 
   		<main class="content">
 
-        <div class="content-head">
+        <div class="content-head clearfix">
           <div class="header-phone">
             С 10 до 20, ежедневно<br>
             <span>8 812 450 25 25</span>
@@ -99,11 +99,11 @@
         </div>
 
   			<h1>Сливочное мороженое</h1>
-  			<!-- Не нужно ли всю сортировку обернуть в один тэг <form>. Сейчас кнопка _Применить_ за пределами форм, будет ли она работать? -->
+  			
   			<section class="filters">
   				<form action="#" method="post">
 
-            <div class="form-row">
+            <div class="form-row clearfix">
               <div class="filters-sorting">
                 <span>Сортировка:</span>
                 <select name="sorting">
@@ -137,7 +137,7 @@
               </div>
             </div>
 
-            <div class="filter-row">
+            <div class="form-row clearfix">
               <div class="filters-filling">
                 <span>Наполнители:</span>
                 <div class="filters-filling-checkbox">
@@ -154,13 +154,13 @@
                 </div>
               </div>
 
-              <button type="submit">Применить</button>  
+              <button class="filters-btn" type="submit">Применить</button>  
             </div>
           </form>
   			</section>
 
-  			<section class="catalog">
-  				<div class="catalog-row">
+  			<section class="catalog clearfix">
+  				<div class="catalog-row clearfix">
   					<div class="catalog-item">
   						<img width="267" height="267" src="img/Catalog/catalog_item_1" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
   						<span class="price">310 P<strong>/кг</strong></span>
@@ -187,7 +187,7 @@
   				</div>
 
 
-  				<div class="catalog-row">
+  				<div class="catalog-row clearfix">
   					<div class="catalog-item">
   						<img width="267" height="267" src="img/Catalog/catalog_item_5" alt="Сливочное с брусничным джемом">
   						<span class="price">325 P<strong>/кг</strong></span>
@@ -218,7 +218,7 @@
   				</div>
 
 
-  				<div class="catalog-row">
+  				<div class="catalog-row clearfix">
   					<div class="catalog-item">
   						<img width="267" height="267" src="img/Catalog/catalog_item_9" alt="Сливочное с шоколадной стружкой">
   						<span class="price">440 P<strong>/кг</strong></span>
@@ -260,7 +260,7 @@
   			</section>
   		</main>
     
-      <footer class="footer">
+      <footer class="footer clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#"></a>
           <a class="social-btn social-btn-in" href="#"></a>

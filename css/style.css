@@ -25,12 +25,17 @@ h2 {
 
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  outline: 5px solid pink;
   background: #dad9d7;
+
+  box-sizing: border-box;
+  position: relative;
   min-width: 900px;
   max-width: 1200px;
-  border: 5px solid pink;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.25%;
+  padding-right: 2.25%;
 }
 
 .main-header {
@@ -79,17 +84,20 @@ h2 {
 }
 
 .submenu {
-  display: none;
-}
-/*Отрегулировать положение выпадающего меню по горизонтали*/
-a[href*="catalog"]:hover+.submenu {
-  display: block;
-  position: absolute;
   background: orange;
-  left: 5px;
-  top: 37px;
+
+  display: none;
+  position: absolute;
+  left: 0%;
+  top: 90%;
+  margin-top: 5px;
   width: 143px;
   height: 171px;
+}
+/*Отрегулировать положение выпадающего меню по горизонтали*/
+
+a[href*="catalog"]:hover+.submenu {
+  display: block;
 }
 
 .user-block {
@@ -104,115 +112,158 @@ a[href*="catalog"]:hover+.submenu {
 }
 
 .search {
+    background-color: green;
+
+    box-sizing: border-box;
     position: relative;
+    margin-right: 10px;
     width: 32px;
     height: 32px;
-    background-color: green;
-    box-sizing: border-box;
-    margin-right: 10px;
 }
 
 .search-trigger {
-    display: block;
     background: yellow;
-     width: 32px;
-     height: 32px;
-    border-radius: 50%;
+
     box-sizing: inherit;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
 .search-form {
-    display: none;
+  background: orange;
+
+  display: none;
+  box-sizing: inherit;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  margin-top: 5px;
+  width: 342px;
+  height: 69px;
+  padding: 15px;
 }
 
 .search-trigger:hover+.search-form {
     display: block;
-    box-sizing: inherit;
-    background: orange;
-    position: absolute;
-    width: 342px;
-    height: 69px;
-    padding: 15px;
-    left: -310px;
-    top: 35px;
+    
 }
 
 /*Выяснить куда съехал контейнер*/
 .login: {
+    background: green;
+
     box-sizing: border-box;
     position: relative;
+    margin-right: 10px;
     width: 92px;
     height: 32px;
-    background: green;
-    margin-right: 10px;
 }
 
 .login-trigger {
+    background: yellow;
+
+    box-sizing: inherit;
     display: block;
+    margin-right: 10px;
     width: 92px;
     height: 32px;
-    background: yellow;
-    box-sizing: inherit;
-    margin-right: 10px;
     border-radius: 50px 50px 50px 50px;
 }
 
 .login-form {
-  display: none;
+  background: orange;
+
+    box-sizing: inherit;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    margin-top: 5px;
+    width: 272px;
+    height: 175px;
 }
 
 .login-trigger:hover+.login-form {
     display: block;
-    box-sizing: inherit;
-    position: absolute;
-    width: 272px;
-    height: 175px;
-    background: orange;
-    left: -10px;
-    top: 43px;
 }
 
 .cart {
+    background: green;
+
     box-sizing: border-box;
     position: relative;
     width: 117px;
     height: 32px;
-    background: green;
 }
 
 .cart-trigger {
-    display: block;
+    background: yellow;
+
     box-sizing: inherit;
+    display: block;
     width: 117px;
     height: 32px;
-    background: yellow;
     border-radius: 50px 50px 50px 50px;
 }
 
 .cart-full {
+  background: orange;
+
   display: none;
+  position: absolute;
+  left:0%;
+  top: 100%;
+  margin-top: 5px;
+  width: 540px;
+  height: 239px;
 }
 
 .cart-trigger:hover+.cart-full {
     display: block;
-    position: absolute;
-    width: 540px;
-    height: 239px;
-    background: orange;
 }
 
-.content {
-  outline: 2px solid white;
-  box-sizing: border-box;
-  margin-right: 2.25%;
-  margin-left: 2.25%;
+.content-head {
+  outline: 2px solid green;
 }
 
 .header-phone {
-  outline: 5px solid green;
+  outline: 1px solid red;
+
   box-sizing: border-box;
-  width: auto;
+  float: right;
   text-align: right;
+}
+
+.breadcrumbs {
+  outline: 1px solid red;
+
+  box-sizing: border-box;
+  float: left;
+}
+
+.form-row {
+  outline: 2px solid green;
+
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.filters-sorting, .filters-price, .filters-fat, 
+.filters-filling, {
+  outline: 1px solid red;
+
+  box-sizing: border-box;
+  float: left;
+  margin-right: 15px;
+  min-height: 65px;
+}
+
+button[type="submit"] {
+  outline: 1px solid red;
+
+  float: left;
 }
 
 .promo {
@@ -222,11 +273,12 @@ a[href*="catalog"]:hover+.submenu {
 }
 
 .promo-item {
+  background: yellow;
+
+  box-sizing: border-box;
   width: 48.8%;
   min-height: 230px;
   text-align:left;
-  background: yellow;
-  box-sizing: border-box;
 }
 
 .promo-item:first-child {
@@ -241,22 +293,25 @@ a[href*="catalog"]:hover+.submenu {
   outline: 1px solid red;
   margin-bottom: 35px;
 }
-/*остается справа зазор*/
-.catalog-item {
-  float: left;
-  width: 23.5%;
-  margin-right: 2%;
-  text-align: center;
-  background: yellow;
-  box-sizing: border-box;
+
+.catalog-row {
+  margin-bottom: 35px;
 }
 
-.catalog-item:last-child {
-  margin-right: 0%
+.catalog-item {
+  outline: 1px solid blue;
+
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-left: 4.4%;
+  padding-right: 4.4%;
 }
 
 .about {
   outline: 1px solid red;
+
   box-sizing: border-box;
   min-height: 306px;
   width: 100%;
@@ -267,6 +322,7 @@ a[href*="catalog"]:hover+.submenu {
 
 .about-item {
   outline: 1px solid red;
+
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -283,47 +339,46 @@ a[href*="catalog"]:hover+.submenu {
 .blog {
   outline: 1px solid red;
   box-sizing: border-box;
-  margin-bottom: 40px;
 }
 
 .blog-new {
+  background: yellow;
+
   box-sizing: border-box;
   float: left;
   width: 48.8%;
   min-height: 219px;
-  background: yellow;
+  margin-bottom: 40px;
 }
 
 .blog-rss {
+  background: yellow;
+
   box-sizing: border-box;
   float: right;
   width: 48.8%;
   min-height: 219px;
-  background: yellow;
+  margin-bottom: 40px;
 }
 
 .map{
   outline: 2px solid black;
+  background: green;
+  
   box-sizing: border-box;
   width: 100%;
   height: 430px;
-  background: green;
-}
-
-.map>div:first-child{
-  height: 430px;
-  padding-top: 67px;
-  padding-bottom: 59px;
-  text-align: right;
 }
 
 .adress {
   outline: 1px solid red;
+  background: yellow;
+
   box-sizing: border-box;
   display: inline-block;
+  margin-top: 65px;
   width: 303px;
   height: 305px;
-  background: yellow;
   text-align: left;
 }
 
@@ -334,3 +389,79 @@ a[href*="catalog"]:hover+.submenu {
 }
 
 
+.footer {
+  outline: 2px solid black;
+
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+}
+
+.footer-social {
+  outline: 1px solid red;
+
+  box-sizing: border-box;
+  float: left;
+  min-height: 40px;
+  width: 186px;
+  margin-bottom: 40px;
+  margin-right: 18.4%;
+  font-size: 0;
+}
+
+.social-btn {
+  background: yellow;
+
+  display: inline-block;
+  height: 31px;
+  width: 31px;
+  margin-right: 17px;
+}
+
+.social-btn-vk {
+  margin-right: 0px;
+}
+
+.footer-ref {
+  outline: 1px solid red;
+
+  box-sizing: border-box;
+  float: left;
+  width: 330px;
+  min-height: 40px;
+  margin-bottom: 40px;
+}
+
+.foter-column {
+  outline: 1 px solid red;
+
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  min-height: 40px;
+}
+
+.footer-column>a:first-child {
+  padding-left: 22px;
+  padding-right: 29px;
+}
+
+.footer-copyright {
+  outline: 1px solid red;
+
+  box-sizing: border-box;
+  float: right;
+  margin-bottom: 20px;
+  width: 189px;
+  min-height: 60px;
+}
+
+.popup-feedback {
+  background: orange;
+
+  box-sizing: border-box;
+  position: fixed;
+  width: 480px;
+  height: 442px;
+}
