@@ -1,10 +1,18 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.3;
   color: #ffffff;
   font-weight: normal;
   font-family: "Roboto";
-  background: #a8a8aa;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 h1 {
@@ -25,10 +33,7 @@ h2 {
 
 
 .container {
-  outline: 5px solid pink;
   background: #dad9d7;
-
-  box-sizing: border-box;
   position: relative;
   min-width: 900px;
   max-width: 1200px;
@@ -38,11 +43,19 @@ h2 {
   padding-right: 2.25%;
 }
 
-.main-header {
-  outline: 2px solid black;
-  box-sizing: border-box;
+.content {
+  position: relative;
+  z-index: 3;
 }
 
+.main-header {
+  position: relative;
+  z-index: 3;
+  outline: 2px solid black;
+}
+.main-header--index {
+  margin-bottom: 572px;
+}
 .logo {
   display: block;
   box-sizing: borer-box;
@@ -101,7 +114,7 @@ a[href*="catalog"]:hover+.submenu {
 }
 
 .user-block {
-    box-sizing: border-box;
+
     float: right;
     margin-top: 22px;
 }
@@ -114,7 +127,7 @@ a[href*="catalog"]:hover+.submenu {
 .search {
     background-color: green;
 
-    box-sizing: border-box;
+
     position: relative;
     margin-right: 10px;
     width: 32px;
@@ -124,7 +137,7 @@ a[href*="catalog"]:hover+.submenu {
 .search-trigger {
     background: yellow;
 
-    box-sizing: inherit;
+
     display: block;
     width: 32px;
     height: 32px;
@@ -135,7 +148,6 @@ a[href*="catalog"]:hover+.submenu {
   background: orange;
 
   display: none;
-  box-sizing: inherit;
   position: absolute;
   left: 0%;
   top: 100%;
@@ -151,10 +163,10 @@ a[href*="catalog"]:hover+.submenu {
 }
 
 /*Выяснить куда съехал контейнер*/
-.login: {
+.login {
     background: green;
 
-    box-sizing: border-box;
+
     position: relative;
     margin-right: 10px;
     width: 92px;
@@ -164,7 +176,7 @@ a[href*="catalog"]:hover+.submenu {
 .login-trigger {
     background: yellow;
 
-    box-sizing: inherit;
+
     display: block;
     margin-right: 10px;
     width: 92px;
@@ -175,7 +187,7 @@ a[href*="catalog"]:hover+.submenu {
 .login-form {
   background: orange;
 
-    box-sizing: inherit;
+
     display: none;
     position: absolute;
     left: 0%;
@@ -192,7 +204,7 @@ a[href*="catalog"]:hover+.submenu {
 .cart {
     background: green;
 
-    box-sizing: border-box;
+
     position: relative;
     width: 117px;
     height: 32px;
@@ -201,7 +213,7 @@ a[href*="catalog"]:hover+.submenu {
 .cart-trigger {
     background: yellow;
 
-    box-sizing: inherit;
+
     display: block;
     width: 117px;
     height: 32px;
@@ -231,7 +243,6 @@ a[href*="catalog"]:hover+.submenu {
 .header-phone {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   float: right;
   text-align: right;
 }
@@ -239,14 +250,12 @@ a[href*="catalog"]:hover+.submenu {
 .breadcrumbs {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   float: left;
 }
 
 .form-row {
   outline: 2px solid green;
 
-  box-sizing: border-box;
   margin-bottom: 10px;
 }
 
@@ -254,7 +263,6 @@ a[href*="catalog"]:hover+.submenu {
 .filters-filling, {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   float: left;
   margin-right: 15px;
   min-height: 65px;
@@ -268,14 +276,12 @@ button[type="submit"] {
 
 .promo {
   outline: 1px solid red;
-  margin-top: 572px;
   margin-bottom: 40px;
 }
 
 .promo-item {
   background: yellow;
 
-  box-sizing: border-box;
   width: 48.8%;
   min-height: 230px;
   text-align:left;
@@ -301,18 +307,17 @@ button[type="submit"] {
 .catalog-item {
   outline: 1px solid blue;
 
-  box-sizing: border-box;
   float: left;
-  width: 25%;
+  width: 23.3%;
   text-align: center;
-  padding-left: 4.4%;
-  padding-right: 4.4%;
+  margin-right: 2.2%;
 }
-
+.catalog-item:last-child {
+  margin-right: 0;
+}
 .about {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   min-height: 306px;
   width: 100%;
   margin-bottom: 40;
@@ -323,7 +328,6 @@ button[type="submit"] {
 .about-item {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   width: 48.8%;
@@ -338,13 +342,10 @@ button[type="submit"] {
 
 .blog {
   outline: 1px solid red;
-  box-sizing: border-box;
 }
 
 .blog-new {
   background: yellow;
-
-  box-sizing: border-box;
   float: left;
   width: 48.8%;
   min-height: 219px;
@@ -353,8 +354,6 @@ button[type="submit"] {
 
 .blog-rss {
   background: yellow;
-
-  box-sizing: border-box;
   float: right;
   width: 48.8%;
   min-height: 219px;
@@ -364,8 +363,6 @@ button[type="submit"] {
 .map{
   outline: 2px solid black;
   background: green;
-  
-  box-sizing: border-box;
   width: 100%;
   height: 430px;
 }
@@ -373,9 +370,7 @@ button[type="submit"] {
 .adress {
   outline: 1px solid red;
   background: yellow;
-
-  box-sizing: border-box;
-  display: inline-block;
+  float: right;
   margin-top: 65px;
   width: 303px;
   height: 305px;
@@ -392,7 +387,6 @@ button[type="submit"] {
 .footer {
   outline: 2px solid black;
 
-  box-sizing: border-box;
   width: 100%;
   min-height: 100px;
   padding-top: 20px;
@@ -401,7 +395,6 @@ button[type="submit"] {
 .footer-social {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   float: left;
   min-height: 40px;
   width: 186px;
@@ -426,7 +419,6 @@ button[type="submit"] {
 .footer-ref {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   float: left;
   width: 330px;
   min-height: 40px;
@@ -434,14 +426,16 @@ button[type="submit"] {
 }
 
 .foter-column {
-  outline: 1 px solid red;
+  outline: 1px solid red;
 
-  box-sizing: border-box;
   display: inline-block;
   width: 50%;
   min-height: 40px;
 }
-
+.footer-column>a {
+  display: inline-block;
+  font-size: 13px;
+}
 .footer-column>a:first-child {
   padding-left: 22px;
   padding-right: 29px;
@@ -450,17 +444,78 @@ button[type="submit"] {
 .footer-copyright {
   outline: 1px solid red;
 
-  box-sizing: border-box;
   float: right;
-  margin-bottom: 20px;
   width: 189px;
   min-height: 60px;
+  font-size: 13px;
 }
+.footer-copyright a {
+  font-size: 13px;
+}
+
+
+/*слайдер*/
+.slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.slider-trigger {
+  display: none;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 60px;
+  top: 200px;
+  z-index: 2;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 554px;
+  z-index: 2;
+  left: 51px;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #fff;
+  border-radius: 21px;
+}
+
+#slide-1:checked ~ .layout { background-color: #849d8f; }
+#slide-2:checked ~ .layout { background-color: #8996a6; }
+#slide-3:checked ~ .layout { background-color: #9d8b84; }
+
+#slide-1:checked ~ .layout .slide-item-1 { display: block; }
+#slide-2:checked ~ .layout .slide-item-2 { display: block; }
+#slide-3:checked ~ .layout .slide-item-3 { display: block; }
+
+#slide-1:checked ~ .layout .slider-controls label[for="slide-1"],
+#slide-2:checked ~ .layout .slider-controls label[for="slide-2"],
+#slide-3:checked ~ .layout .slider-controls label[for="slide-3"] { 
+  background-color: #fff;
+}
+
+
+/*Попапы*/
 
 .popup-feedback {
   background: orange;
 
-  box-sizing: border-box;
   position: fixed;
   width: 480px;
   height: 442px;
