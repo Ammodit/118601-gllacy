@@ -82,19 +82,27 @@ h2 {
 .main-menu-item {
   display: inline-block;
   margin-right: 30px;
+  position: relative;
+  padding-bottom: 5px;
 }
-
+.main-menu-item > a {
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 27px;
+}
+.main-menu-item:hover > a {
+  background-color: #fff;
+  color: #333;
+}
 .main-menu-item:last-child {
   margin-right: 0px;
 }
 
-.main-menu-item a {
-  color: #ffffff;
-  font-weight: bold;
-}
-
 .submenu {
-  display: block;
+  display: none;
   position: absolute;
   left: 0%;
   top: 100%;
@@ -103,9 +111,15 @@ h2 {
   height: 171px;
   background-color: #f8f7f4;
 }
+.submenu li:first-child{
+  
+}
+.submenu li {
+  padding: 0 6px;
+}
 /*Отрегулировать положение выпадающего меню по горизонтали*/
 
-a[href*="catalog"]:hover+.submenu {
+.main-menu-item:hover .submenu {
   display: block;
 }
 
