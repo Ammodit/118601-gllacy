@@ -65,28 +65,20 @@ h2 {
   margin-right: 30px;
 }
 
+.main-menu {
+  position: relative;
+  float: left;
+  height: 32px;
+  width: ;
+  margin-top: 22px;
+}
+
 .main-menu>ul,
 .submenu{
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
-
-.main-menu:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.main-menu {
-  position: relative;
-  float: left;
-  background: yellow;
-  height: 32px;
-  width: ;
-  margin-top: 22px;
-}
-
 .main-menu-item {
   display: inline-block;
   margin-right: 30px;
@@ -96,16 +88,20 @@ h2 {
   margin-right: 0px;
 }
 
-.submenu {
-  background: orange;
+.main-menu-item a {
+  color: #ffffff;
+  font-weight: bold;
+}
 
-  display: none;
+.submenu {
+  display: block;
   position: absolute;
   left: 0%;
   top: 100%;
   margin-left: -7px;
   width: 143px;
   height: 171px;
+  background-color: #f8f7f4;
 }
 /*Отрегулировать положение выпадающего меню по горизонтали*/
 
