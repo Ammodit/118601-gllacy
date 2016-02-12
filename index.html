@@ -5,6 +5,7 @@
 	<title>HTML Academy: Глейси</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -15,9 +16,7 @@
 	<div class="layout">
 		<div class="container">
 			<header class="main-header main-header--index clearfix">
-				<a class="logo" href="index.html">
-					<img width="153" height="63" src="img/Header/logo_glacy.svg" alt="Glacy shop">
-				</a>
+					<img class="logo" width="153" height="63" src="img/Header/logo_glacy.svg" alt="Glacy shop">
 
 				<nav class="main-menu clearfix">
 					<ul>
@@ -41,17 +40,17 @@
 						<a class="search-trigger" href="#">Поиск</a>
 						<div class="search-form">
 							<form id="search" action="#" method="get">
-								<input type="search" placeholder="Что ищем?">
+								<input class="field" type="search" placeholder="Что ищем?">
 							</form>
 						</div>
 					</div>
 
 					<div class="login">
-						<a class="login-trigger" href="#"><p>Вход</p></a>
+						<a class="login-trigger" href="#">Вход</a>
 						<div class="login-form">
 							<form id="login" action="#" method="post">
-								<input name="login" placeholder="Электронная почта">
-								<input type="password" placeholder="Пароль">
+								<input class="field" name="login" placeholder="Электронная почта">
+								<input class="field" type="password" placeholder="Пароль">
 								<button id="login-submit" class="button" type="submit">Войти</button>
 								<div class="login-links">
 									<a href="#">Забыли пароль?</a>
@@ -66,16 +65,16 @@
 						<div class="cart-full">
 							<table>
 								<tr>
-									<td><a href="#"></a></td>
+									<td><a href="#">Удалить</a></td>
 									<td><img width="33" height="33" src="img/Header/cart_icecream_1.png" alt=""></td>
 									<td>Пломбир с апельсиновым джемом</td>
 									<td>1,5кг<span>х 200руб.</span></td>
 									<td>300руб.</td>
 								</tr>
 								<tr>
-									<td><a href="#"></a></td>
+									<td><a href="#">Удалить</a></td>
 									<td><img width="33" height="33" src="img/Header/cart_icecream_2.png" alt=""></td>
-									<td>Клубничный пломбир с посыпкой из белого шоколада</td>
+									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 									<td>1,5кг<span>х 300руб.</span></td>
 									<td>450руб.</td>
 								</tr>
@@ -144,25 +143,25 @@
 					<div class="catalog-item stiker">
 						<img width="267" src="img/Catalog/catalog_item_1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						<span class="price">310 P<strong>/кг</strong></span>
-						<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					</div>
 
 					<div class="catalog-item stiker">
 						<img width="267" src="img/Catalog/catalog_item_2.png" alt="Сливочно-кофейное с кусочками шоколада">
 						<span class="price">380 P<strong>/кг</strong></span>
-						<p>Сливочно-кофейное с кусочками шоколада</p>
+						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</div>
 
 					<div class="catalog-item stiker">
 						<img width="267" src="img/Catalog/catalog_item_3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						<span class="price">355 P<strong>/кг</strong></span>
-						<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					</div>
 
 					<div class="catalog-item stiker">
 						<img width="267" src="img/Catalog/catalog_item_4.png" alt="Сливочное крем-брюле с карамельной подливкойs">
 						<span class="price">415 P<strong>/кг</strong></span>
-						<p>Сливочное крем-брюле с карамельной подливкой</p>
+						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</div>
 				</section>
 
@@ -182,13 +181,13 @@
 				<section class="blog clearfix">
 					<div class="blog-new">
 						<p>Новое в нашем блоге</p>
-						<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+						<a href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу</a>
 					</div>
 
 					<div class="blog-rss">
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 						<form action="#">
-							<input type="email" name="rss-email" value="Электронная почта">
+							<input class="field" type="email" name="rss-email" value="Электронная почта">
 							<button class="button" type="submit">Отправить</button>
 						</form>
 					</div>
@@ -245,8 +244,8 @@
 		<div class="popup popup-feedback">
 			<span>Мы обязательно вам ответим!</span>
 			<form action="#" method="post">
-				<input name="name" placeholder="Как вас зовут?">
-				<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+				<input class="field" name="name" placeholder="Как вас зовут?">
+				<input class="field" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
 				<textarea placeholder="Напишите что-нибудь..."></textarea>
 				<button type="submit">Отправить</button>
 			</form>
