@@ -41,7 +41,7 @@ button,
 .button {
   box-sizing: content-box;
   display: inline-block;
-  border-radius: 27px;
+  border-radius: 23px;
   border: none;
   background-image: linear-gradient(to bottom, #f26843, #e74b36);
   box-shadow: 0 1px 2px 0 #f64e3d;
@@ -452,7 +452,7 @@ tr:last-child>td {
   position: absolute;
   top: 0;
   right: -35%;
-  content: ">>";
+  content: "\00BB";
   color: #ffffff;
 }
 
@@ -490,7 +490,7 @@ tr:last-child>td {
   color: #ffffff;
 }
 
-.filters-sorting select:active {
+.filters-sorting select:focus {
   background: #ffffff;
   color: #343434;
 }
@@ -691,11 +691,13 @@ tr:last-child>td {
 .promo-item:first-child {
   float: left;
   background: #540a12 url('../img/Index/Promo_1.png') no-repeat;
+  background-size: cover;
 
 }
 .promo-item:last-child {
   float: right;
   background: #5d3621 url('../img/Index/Promo_2.png') no-repeat;
+  background-size: cover;
 }
 
 .about {
@@ -734,7 +736,7 @@ tr:last-child>td {
   margin-bottom: 40px;
   padding: 25px 20px;
   border-radius: 15px;
-  background: #f8f7f4 url('../img/Index/blog_new_bg.png') no-repeat;
+  background: #f8f7f4 url('../img/Index/blog_new_bg.png') no-repeat right top;
   color: #5a5a5a;
 }
 
@@ -785,7 +787,7 @@ tr:last-child>td {
 .map {
   width: 100%;
   height: 430px;
-  background: url('../img/Index/map.jpg') no-repeat;
+  background: url('../img/Index/map.jpg') no-repeat center center;
 /*Решить проблему с обрывающейся картой*/
 }
 
