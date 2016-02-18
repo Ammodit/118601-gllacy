@@ -1,0 +1,107 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart_delete {
+    width: 10px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.sprite-cart_icon {
+    width: 21px;
+    height: 20px;
+    background-position: -5px -25px;
+}
+
+.sprite-cart_icon_hover {
+    width: 21px;
+    height: 20px;
+    background-position: -5px -55px;
+}
+
+.sprite-cart_icon_hover_full {
+    width: 21px;
+    height: 20px;
+    background-position: -5px -85px;
+}
+
+.sprite-checkbox {
+    width: 12px;
+    height: 10px;
+    background-position: -5px -115px;
+}
+
+.sprite-footer_heart {
+    width: 15px;
+    height: 13px;
+    background-position: -5px -135px;
+}
+
+.sprite-login_icon {
+    width: 20px;
+    height: 19px;
+    background-position: -5px -158px;
+}
+
+.sprite-login_icon_hover {
+    width: 20px;
+    height: 19px;
+    background-position: -5px -187px;
+}
+
+.sprite-popup_shtdwn {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -216px;
+}
+
+.sprite-radio {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -243px;
+}
+
+.sprite-search_icon {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -265px;
+}
+
+.sprite-search_icon_hover {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -292px;
+}
+
+.sprite-social_fb_icon {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -319px;
+}
+
+.sprite-social_in_icon {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -360px;
+}
+
+.sprite-social_tw_icon {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -401px;
+}
+
+.sprite-social_vk_icon {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -442px;
+}
+
+.sprite-sticker {
+    width: 61px;
+    height: 61px;
+    background-position: -5px -483px;
+}
