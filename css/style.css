@@ -1043,7 +1043,8 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .adress {
-  float: right;
+  position: absolute;
+  right: 0;
   margin-top: 65px;
   padding: 30px 25px;
   width: 303px;
@@ -1055,6 +1056,7 @@ input[type="checkbox"]:checked+label::before {
   font-size: 14px;
   line-height: 20px;
   margin-right: 2.25%;
+  z-index: 2;
 }
 
 .adress strong {
