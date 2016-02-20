@@ -39,7 +39,9 @@ h3{
 
 input:focus,
 select:focus,
-a:focus {
+a:focus,
+textarea:focus,
+button:focus {
   outline: none;
 }
 
@@ -70,7 +72,6 @@ input.field {
 
 
 .container {
-  outline: 1px solid red;
   position: relative;
   min-width: 900px;
   max-width: 1200px;
@@ -736,14 +737,15 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .catalog-item .price {
+  margin-top: -65px;
+  margin-bottom: 25px; 
+  vertical-align: middle;
   text-align: left;
-  margin-top: ;
   font-size: 45px;
   line-height: 13.13px;
   font-weight: 700;
-  vertical-align: bottom;
-  margin-top: -65px;
-  margin-bottom: 25px;
+  
+
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -1038,18 +1040,6 @@ input[type="checkbox"]:checked+label::before {
   width: 100%;
   height: 430px;
   background: url('../img/Index/map.jpg') no-repeat center center;
-/*Решить проблему с обрывающейся картой*/
-}
-
-.map::before {
-  content: "";
-  position: absolute;
-  width: 218px;
-  height: 142px;
-  left: 25%;
-  bottom: 149px;
-  background: url('../img/Index/map_pin.png') no-repeat;
-  /*Маркер*/
 }
 
 .adress {
@@ -1270,7 +1260,14 @@ input[type="checkbox"]:checked+label::before {
 /*Попапы*/
 
   .popup-wrap {
+    position: relative;
     display: none;
+    position: fixed;
+
+    z-index: 1000;
+  }
+
+  .popup-overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -1278,7 +1275,7 @@ input[type="checkbox"]:checked+label::before {
     left: 0;
     background: rgba(0, 0, 0, 0.2);
 
-    z-index: 999;
+    z-index: 1;
   }
 
  .popup-feedback {
@@ -1294,7 +1291,7 @@ input[type="checkbox"]:checked+label::before {
   border-radius: 10px;
   background: #f8f7f4;
 
-  z-index: 1000;
+  z-index: 2;
 }
 
 .popup-feedback span {
@@ -1317,14 +1314,15 @@ input[type="checkbox"]:checked+label::before {
 
 .popup-feedback input {
   margin-top: 20px;
+  padding-left: 20px;
 }
 
 .popup-feedback textarea {
   width: 430px;
   height: 155px;
   margin-top: 20px;
-  padding: 15px 20px;
-  border-radius: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
   border: 1px solid #d3d3d2;
   font-size: 16px;
   line-height: 24.3px;
