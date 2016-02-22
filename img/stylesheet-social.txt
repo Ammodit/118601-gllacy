@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-social-fb {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -5px;
+}
+
+.sprite-social-in {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -46px;
+}
+
+.sprite-social-tw {
+    width: 33px;
+    height: 32px;
+    background-position: -5px -87px;
+}
+
+.sprite-social-vk {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -129px;
+}
