@@ -1172,7 +1172,7 @@ input[type="checkbox"]:checked+label:hover::before {
 
 .catalog-item:hover {
     z-index: 2;
-    margin-bottom: -56px;
+    margin-bottom: -15px;
 }
 
 .catalog-item:hover::after {
