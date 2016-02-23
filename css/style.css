@@ -61,6 +61,7 @@ button,
   color: #ffffff;
   text-decoration: none;
   margin: 0;
+  vertical-align: middle;
 }
 
 button:hover,
@@ -165,6 +166,7 @@ input.field:focus,
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
+  vertical-align: middle;
 }
 
 .main-menu-item>a>span {
@@ -214,7 +216,7 @@ input.field:focus,
   top: 100%;
   margin-left: -7px;
   min-width: 143px;
-  height: 173px;
+  min-height: 173px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -245,9 +247,9 @@ input.field:focus,
   color: #343434;
   padding-left: 14px;
 }
-
+ 
 .submenu-item:not(:first-child) {
-  height: 28px;
+  min-height: 28px;
   margin-bottom: 4px;
 }
 
@@ -427,6 +429,7 @@ input.field:focus,
   margin: 0;
   text-decoration: none;
   border-bottom: 1px solid #adacaa;
+  vertical-align: middle;
 }
 
 .login-links a:hover {
@@ -632,13 +635,13 @@ tr:last-child>td {
 
 .promo-item:first-child {
   float: left;
-  background: #540a12 url('../img/index/Promo_1.png') no-repeat;
+  background: #540a12 url('../img/index/promo_1.png') no-repeat;
   background-size: cover;
 }
 
 .promo-item:last-child {
   float: right;
-  background: #5d3621 url('../img/index/Promo_2.png') no-repeat;
+  background: #5d3621 url('../img/index/promo_2.png') no-repeat;
   background-size: cover;
 }
 
@@ -804,11 +807,13 @@ tr:last-child>td {
   margin-top: 5px;
   font-size: 18px;
   line-height: 24px;
+  vertical-align: middle;
 }
 
 .adress span {
   display: inline-block;
   margin-bottom: 20px;
+  vertical-align: middle;
 }
 
 .adress a {
@@ -837,6 +842,7 @@ tr:last-child>td {
   text-decoration: none;
   color: #ffffff;
   border-bottom: 1px solid #c2cec7;
+  vertical-align: middle;
 }
 
 .breadcrumbs a:hover {
@@ -880,6 +886,7 @@ tr:last-child>td {
   display: inline-block;
   vertical-align: bottom;
   font-size: 16px;
+  vertical-align: middle;
 }
 
 .filters-item>span {
@@ -894,6 +901,7 @@ tr:last-child>td {
   border-radius: 27px;
   overflow: hidden;
   margin-right: 15px;
+  vertical-align: middle;
 }
 
 .filters-sorting select {
@@ -1002,7 +1010,8 @@ input[type="radio"] {
   height: 20px;
   margin-right: 10px;
   border: 1px solid #ffffff;
-  border-radius: 50%
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 .filters-fat label:hover:before {
@@ -1035,7 +1044,8 @@ input[type="radio"]:checked+label:hover:before {
   height: 20px;
   margin-right: 10px;
   border: 1px solid #ffffff;
-  border-radius: 5px
+  border-radius: 5px;
+  vertical-align: middle;
 }
 
 .filters-filling label:hover::before {
@@ -1135,11 +1145,12 @@ input[type="checkbox"]:checked+label:hover::before {
   margin-bottom: 5px;
   margin-right: 5px;
   margin-left: 5px;
+  vertical-align: middle;
 }
 
 .catalog-item .price strong {
   font-size: 30px;
-  font-weight: 700px;
+  font-weight: bold;
 }
 
 .catalog-item a {
@@ -1190,6 +1201,7 @@ input[type="checkbox"]:checked+label:hover::before {
 
 .catalog-item:hover a:last-of-type {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .sticker::before {
@@ -1223,6 +1235,7 @@ input[type="checkbox"]:checked+label:hover::before {
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+  vertical-align: middle;
 }
 
 .paginator a.current {
@@ -1247,6 +1260,7 @@ input[type="checkbox"]:checked+label:hover::before {
   font-size: 0;
   text-decoration: none;
   background: url('../img/catalog/paginator_prev.png') no-repeat;
+  vertical-align: middle;
 }
 
 .paginator .next {
@@ -1257,6 +1271,7 @@ input[type="checkbox"]:checked+label:hover::before {
   font-size: 0;
   text-decoration: none;
   background: url('../img/catalog/paginator_next.png') no-repeat;
+  vertical-align: middle;
 }
 
 
@@ -1288,6 +1303,7 @@ input[type="checkbox"]:checked+label:hover::before {
   border-radius: 100px;
   opacity: 0.8;
   box-shadow: 0 0 0 3px #c2cec7;
+  vertical-align: middle;
 }
 
 .social-btn-tw {
@@ -1342,6 +1358,7 @@ input[type="checkbox"]:checked+label:hover::before {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid #abbcb3;
+  vertical-align: middle;
 }
 
 .footer-column a:hover {
@@ -1464,6 +1481,7 @@ input[type="checkbox"]:checked+label:hover::before {
   border: 2px solid #fff;
   border-radius: 21px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .slider-controls label:last-of-type {
